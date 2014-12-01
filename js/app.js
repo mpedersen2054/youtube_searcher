@@ -1,7 +1,7 @@
 $(function() {
     
-    $('html').on('click', function () {
-        alert('hello')
+    $('#search-results').on('submit', function() {
+        alert('helloz')
     })
 
 })();

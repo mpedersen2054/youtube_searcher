@@ -1,5 +1,38 @@
 @import 'partials/general'
 
+$primary: rgba(192, 57, 43, 0.9)
+$lightprimary: rgba(192, 57, 43, 0.6)
+$secondary: #d35400 // lightred
 
-h1
-    color: red
+header
+    width: 100%
+    height: 66.6px
+    background-color: $primary
+    .logo
+        margin-top: 16px
+        a
+            font-size: 1.9em
+            font-weight: 700
+            text-decoration: none
+            color: #fff
+    #search-results
+        position: relative
+        margin-top: 14px
+        #query
+            width: 380px
+            height: 36px
+            outline: none
+            border-radius: 6px
+            font-size: 1.2em
+            padding-left: 10px
+        .pure-button
+            position: absolute
+            top: 5px
+            right: 0px
+            height: 36px
+            color: #fff
+            opacity: 0.9
+            border-radius: 0 6px 6px 0
+            background-color: $lightprimary
+            margin-left: -5px
+            margin-top: -5px

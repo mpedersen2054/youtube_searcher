@@ -1,11 +1,15 @@
+*
+    box-sizing: border-box
+
 html, html a
     -webkit-font-smoothing: antialiased
     text-shadow: 1px 1px 1px rgba(0,0,0,0.004)
 
 html
     font-family: 'Montserrat', sans-serif
-    font-size: 90%
+    font-size: 16px
     line-height: 1.35px
+    text-transform: uppercase
 
 h1,h2,h3,h4,h5,h6
     font-family: 'Neuton', serif
@@ -14,4 +18,9 @@ h1,h2,h3,h4,h5,h6
 .container
     width: 900px
     margin: 0 auto
-    border: 1px solid red
+    overflow: auto
+
+.pull-left
+    float: left
+.pull-right
+    float: right

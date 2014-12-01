@@ -1,11 +1,15 @@
+* {
+  box-sizing: border-box; }
+
 html, html a {
   -webkit-font-smoothing: antialiased;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
 html {
   font-family: "Montserrat", sans-serif;
-  font-size: 90%;
-  line-height: 1.35px; }
+  font-size: 16px;
+  line-height: 1.35px;
+  text-transform: uppercase; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Neuton", serif;
@@ -14,9 +18,45 @@ h1, h2, h3, h4, h5, h6 {
 .container {
   width: 900px;
   margin: 0 auto;
-  border: 1px solid red; }
+  overflow: auto; }
 
-h1 {
-  color: red; }
+.pull-left {
+  float: left; }
+
+.pull-right {
+  float: right; }
+
+header {
+  width: 100%;
+  height: 66.6px;
+  background-color: rgba(192, 57, 43, 0.9); }
+  header .logo {
+    margin-top: 16px; }
+    header .logo a {
+      font-size: 1.9em;
+      font-weight: 700;
+      text-decoration: none;
+      color: #fff; }
+  header #search-results {
+    position: relative;
+    margin-top: 14px; }
+    header #search-results #query {
+      width: 380px;
+      height: 36px;
+      outline: none;
+      border-radius: 6px;
+      font-size: 1.2em;
+      padding-left: 10px; }
+    header #search-results .pure-button {
+      position: absolute;
+      top: 5px;
+      right: 0px;
+      height: 36px;
+      color: #fff;
+      opacity: 0.9;
+      border-radius: 0 6px 6px 0;
+      background-color: rgba(192, 57, 43, 0.6);
+      margin-left: -5px;
+      margin-top: -5px; }
 
 /*# sourceMappingURL=styles.css.map */
