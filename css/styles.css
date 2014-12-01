@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.4em; }
 
 .container {
-  width: 900px;
+  width: 960px;
   margin: 0 auto;
   overflow: auto; }
 
@@ -29,21 +29,26 @@ h1, h2, h3, h4, h5, h6 {
 header {
   width: 100%;
   height: 66.6px;
-  background-color: rgba(192, 57, 43, 0.9); }
+  background-color: #400404;
+  border-bottom: 3px solid #bf4d34; }
   header .logo {
-    margin-top: 16px; }
+    margin-top: 14px; }
     header .logo a {
-      font-size: 1.9em;
+      text-transform: none;
+      font-size: 2.2em;
       font-weight: 700;
       text-decoration: none;
+      text-shadow: 1px 1.5px 1px #bf4d34;
       color: #fff; }
   header #search-results {
     position: relative;
     margin-top: 14px; }
     header #search-results #query {
-      width: 380px;
+      width: 420px;
       height: 36px;
       outline: none;
+      border: none;
+      border: 1px solid #bf4d34;
       border-radius: 6px;
       font-size: 1.2em;
       padding-left: 10px; }
@@ -53,10 +58,12 @@ header {
       right: 0px;
       height: 36px;
       color: #fff;
-      opacity: 0.9;
-      border-radius: 0 6px 6px 0;
-      background-color: rgba(192, 57, 43, 0.6);
+      border-radius: 3px 6px 6px 3px;
+      background-color: #bf4d34;
       margin-left: -5px;
       margin-top: -5px; }
+
+.light-red {
+  color: #bf4d34; }
 
 /*# sourceMappingURL=styles.css.map */
