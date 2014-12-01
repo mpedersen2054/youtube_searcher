@@ -16,9 +16,10 @@ $(function() {
         for (var i = 0; i < results.length; i++) {
             var resImg = results[i].snippet.thumbnails.medium.url,
                 resTitle = results[i].snippet.title,
-                resDesc = results[i].snippet.description;
+                resDesc = results[i].snippet.description,
+                resUrl = 'https://www.youtube.com/watch?v='+results[i].id.videoId;
 
-            var template = outputResultHtml(resImg, resTitle, resDesc)
+            var template = outputResultHtml(resImg, resTitle, resDesc, resUrl)
 
             $('#results .container').append(template)
 

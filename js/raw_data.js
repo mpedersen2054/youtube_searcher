@@ -1,7 +1,7 @@
 // a=resImg,b=resTitle,c=resDesc
-function outputResultHtml(a,b,c) {
+function outputResultHtml(a,b,c,d) {
     var resultHTML = '';
-    resultHTML+="<a href='#'>"
+    resultHTML+="<a href='"+d+"'>"
     resultHTML+='<article class="result">'
     resultHTML+='<div class="thumbnail pull-left">';
     resultHTML+="<img src='"+a+"'>"
