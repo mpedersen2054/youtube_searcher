@@ -11,10 +11,16 @@ $(function() {
     })
 
     function showResults(results) {
+
         for (var i = 0; i < results.length; i++) {
-            // console.log(results[i].snippet.title);
-            $('#results').append('<img src='+results[i].snippet.thumbnails.medium.url+'>');
-            // console.log(results[i].snippet.thumbnails.medium.url)
+            var resObj = results[i].snippet,
+                resImg = resObj.thumbnails.medium.url,
+                resTitle = resObj.title,
+                resDesc = resObj.description;
+            // $('#results').append('<img src='+results[i].snippet.thumbnails.medium.url+'>');
+            console.log(resImg);
+            console.log(resTitle);
+            console.log(resDesc);
         };
     }
 

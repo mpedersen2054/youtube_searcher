@@ -8,11 +8,9 @@ html, html a {
 html {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  line-height: 1.35px;
-  text-transform: uppercase; }
+  line-height: 1.35px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Neuton", serif;
   font-size: 1.4em; }
 
 .container {
@@ -65,5 +63,26 @@ header {
 
 .light-red {
   color: #bf4d34; }
+
+#results {
+  margin-top: 2.8em; }
+  #results .result {
+    position: relative;
+    min-height: 200px;
+    border-bottom: 1px solid #bf4d34;
+    margin-bottom: 2em; }
+    #results .result .thumbnail {
+      margin-right: 2em; }
+    #results .result .meta {
+      position: relative;
+      top: 0;
+      min-height: 180px;
+      padding: 0.6em 0; }
+      #results .result .meta h3 {
+        font-size: 1.6em;
+        color: #400404;
+        margin-bottom: 0.4em; }
+      #results .result .meta p {
+        text-transform: lowercase; }
 
 /*# sourceMappingURL=styles.css.map */
