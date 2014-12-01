@@ -1,3 +1,22 @@
+html, html a {
+  -webkit-font-smoothing: antialiased;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004); }
 
+html {
+  font-family: "Montserrat", sans-serif;
+  font-size: 90%;
+  line-height: 1.35px; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Neuton", serif;
+  font-size: 1.4em; }
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+  border: 1px solid red; }
+
+h1 {
+  color: red; }
 
 /*# sourceMappingURL=styles.css.map */
