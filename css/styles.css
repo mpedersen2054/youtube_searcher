@@ -66,25 +66,28 @@ header {
 
 #results {
   margin-top: 2.8em; }
+  #results a {
+    text-decoration: none; }
   #results .result {
-    position: relative;
-    min-height: 180px;
-    border-bottom: 1px solid #bf4d34;
-    margin-bottom: 2em;
-    overflow: hidden; }
+    min-height: 220px;
+    padding: 2.6em 0 0 1em;
+    overflow: hidden;
+    text-decoration: none;
+    border-bottom: 1px solid #bf4d34; }
+    #results .result:hover {
+      background-color: #ffdbdb; }
     #results .result .thumbnail {
       margin-right: 2em; }
     #results .result .meta {
       position: relative;
       top: 0;
-      min-height: 180px;
+      min-height: 220px;
       padding: 0.6em 0;
-      overflow: none; }
+      overflow: none;
+      color: #400404; }
       #results .result .meta h3 {
         font-size: 1.6em;
-        color: #400404;
+        color: #bf4d34;
         margin-bottom: 0.4em; }
-      #results .result .meta p {
-        text-transform: lowercase; }
 
 /*# sourceMappingURL=styles.css.map */

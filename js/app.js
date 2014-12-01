@@ -20,7 +20,7 @@ $(function() {
 
             var template = outputResultHtml(resImg, resTitle, resDesc)
 
-            $('#results').append(template)
+            $('#results .container').append(template)
 
         }
     }
