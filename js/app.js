@@ -16,14 +16,13 @@ $(function() {
         for (var i = 0; i < results.length; i++) {
             var resImg = results[i].snippet.thumbnails.medium.url,
                 resTitle = results[i].snippet.title,
-                resDesc = results[i].snippet.description,
-                html = '';
+                resDesc = results[i].snippet.description;
 
-            template = outputResultHtml(resImg, resTitle, resDesc)
+            var template = outputResultHtml(resImg, resTitle, resDesc)
 
             $('#results').append(template)
 
-        };
+        }
     }
 
 })();
