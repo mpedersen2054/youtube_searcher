@@ -1,4 +1,4 @@
-$(function() {
+(function($, document) {
     $('#query').focus();
     $('#results .container').html('<h1>No Search Term Entered</h1>');
 
@@ -26,7 +26,7 @@ $(function() {
     }
 
     function showResults(results) {
-        $('#results .container').html('');
+        $('#results .container').html(''); // clear prev results
 
         for (var i = 0; i < results.length; i++) {
             var resImg = results[i].snippet.thumbnails.medium.url,
@@ -34,10 +34,11 @@ $(function() {
                 resDesc = results[i].snippet.description,
                 resUrl = 'https://www.youtube.com/watch?v='+results[i].id.videoId;
 
+            // outputResultHtml from raw_data.js
             var template = outputResultHtml(resImg, resTitle, resDesc, resUrl)
 
             $('#results .container').append(template)
         }
     }
 
-})();
+})(jQuery, document);
